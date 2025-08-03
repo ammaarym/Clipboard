@@ -1,0 +1,16 @@
+{
+    "name": "Text Highlighter",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "highlighted text is saved with a floating button",
+    "permissions": ["scripting", "tabs"],
+    "host_permissions": ["<all_urls"],
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
